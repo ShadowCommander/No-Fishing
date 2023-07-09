@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bldh4mkx2wh8i"]
+
+[ext_resource type="Script" path="res://Mobs/Fisherman.gd" id="1_aslf4"]
+[ext_resource type="Shape2D" uid="uid://7jlb6dumwbtj" path="res://CollisionShapes/mob_circle_shape_2d.tres" id="1_kpvrx"]
+
+[sub_resource type="CanvasTexture" id="CanvasTexture_uo2ab"]
+
+[node name="Fisherman" type="CharacterBody2D"]
+script = ExtResource("1_aslf4")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+modulate = Color(0, 1, 1, 1)
+position = Vector2(-5.96047e-08, -8.34465e-07)
+scale = Vector2(14, 14)
+texture = SubResource("CanvasTexture_uo2ab")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = ExtResource("1_kpvrx")

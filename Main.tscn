@@ -1,0 +1,12 @@
+[gd_scene load_steps=3 format=3 uid="uid://6u11qesowi64"]
+
+[ext_resource type="PackedScene" uid="uid://bldh4mkx2wh8i" path="res://Mobs/Fisherman.tscn" id="1_ah0x5"]
+[ext_resource type="PackedScene" uid="uid://dqogaumry4cd1" path="res://Pond.tscn" id="2_mijfg"]
+
+[node name="Root" type="Node2D"]
+
+[node name="Pond" parent="." instance=ExtResource("2_mijfg")]
+position = Vector2(538, 315)
+
+[node name="Fisherman2" parent="." instance=ExtResource("1_ah0x5")]
+position = Vector2(197, 146)
